@@ -462,11 +462,92 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
-          <img src="./images/x-button.jpg" height="11px" />
+          <svg class="form-icon-name">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
         </button>
+        <div class="modal-content">
+          <p class="contact-form-header">
+            Zostaw swoje dane w formularzu poniżej
+          </p>
+          <form name="contact-form">
+            <fieldset class="fieldset-contact-form">
+              <label class="label-header label" for="user-name">Imie</label>
+              <div class="icon-box-form">
+                <svg class="form-icon-name">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="user-name"
+                class="input-form"
+                name="name"
+              />
+            </fieldset>
+
+            <fieldset class="fieldset-contact-form">
+              <label class="label-header label" for="phone-number"
+                >Telefon</label
+              >
+              <div class="icon-box-form">
+                <svg class="form-icon-phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <input
+                type="tel"
+                id="phone-number"
+                class="input-form"
+                name="phone-number"
+              />
+            </fieldset>
+
+            <fieldset class="fieldset-contact-form">
+              <label class="label-header label" for="email-adress">Email</label>
+              <div class="icon-box-form">
+                <svg class="form-icon-email">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+              <input
+                type="email"
+                id="email-adress"
+                class="input-form"
+                name="email"
+              />
+            </fieldset>
+
+            <fieldset class="fieldset-comment-form">
+              <label class="label-header label" for="user-comment"
+                >Komentarz</label
+              >
+              <textarea
+                placeholder="Wprowadź tekst"
+                type="text"
+                class="input-form input-form-comment"
+                name="comment"
+                id="user-comment"
+              ></textarea>
+            </fieldset>
+
+            <label class="rodo-label"
+              ><input type="checkbox" class="input-checkbox" id="legal-rodo" />
+              <p class="rodo-accept-text">
+                Oświadczam iż akceptuję
+                <a href="#" class="rodo-link">Regulamin</a> i
+                <a href="#" class="rodo-link">Politykę Prywatności.</a>
+              </p></label
+            >
+
+            <button type="submit" class="submit-button">
+              <p class="submit-button-text">Wyślij</p>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
