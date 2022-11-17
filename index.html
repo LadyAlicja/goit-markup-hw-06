@@ -462,10 +462,10 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
-          <svg class="form-icon-name">
+          <svg class="form-closed-x-button">
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
         </button>
@@ -535,7 +535,12 @@
             </fieldset>
 
             <label class="rodo-label"
-              ><input type="checkbox" class="input-checkbox" id="legal-rodo" />
+              ><input
+                type="checkbox"
+                value=""
+                class="input-checkbox"
+                id="legal-rodo"
+              />
               <p class="rodo-accept-text">
                 Oświadczam iż akceptuję
                 <a href="#" class="rodo-link">Regulamin</a> i
