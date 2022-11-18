@@ -1124,7 +1124,8 @@ ul.aplications-list > li > div > img {
   color: #ffffff;
 }
 
-.newsletter-email:active {
+.newsletter-email:active,
+.newsletter-email:focus {
   padding: 15px 16px;
 }
 
